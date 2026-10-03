@@ -1,0 +1,16 @@
+Training Data:
+     Sky AirTemp Humidity    Wind Water Forecast EnjoySport
+0  Sunny    Warm   Normal  Strong  Warm     Same        Yes
+1  Sunny    Warm     High  Strong  Warm     Same        Yes
+2  Rainy    Cold     High  Strong  Warm   Change         No
+3  Sunny    Warm     High    Weak  Warm   Change        Yes
+
+Specific Boundary (S):
+['Sunny', 'Warm', '?', '?', 'Warm', '?']
+
+General Boundary (G):
+['Sunny', '?', '?', '?', '?', '?']
+['?', 'Warm', '?', '?', '?', '?']
+['?', '?', '?', '?', 'Warm', '?']
+/tmp/ipykernel_961/3065246598.py:40: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  target = df.iloc[i][-1]
